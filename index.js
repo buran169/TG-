@@ -4,7 +4,7 @@ const axios = require('axios');
 const fs = require('fs');
 const { Webhook } = require('discord-webhook-node');
 
-const TELEGRAM_TOKEN = "TELEGRAM_BOT_TOKEN";
+const TELEGRAM_TOKEN = "8492109741:AAFShgZy_MhE6IGSGKH8PF1H6dac4KKZBgs";
 const DISCORD_WEBHOOK_URL = "DISCORD_WEBHOOK_URL";
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
@@ -38,7 +38,7 @@ bot.on('message', async (msg) => {
       const uploaded = await drive.files.create({
         requestBody: {
           name: fileName,
-          parents: ['YOUR_DRIVE_FOLDER_ID']
+          parents: ['1MHd9OyPXmV4ioDHyfMdNZ5FVcLYVHjT4']
         },
         media: {
           body: fs.createReadStream(path)
