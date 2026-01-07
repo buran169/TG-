@@ -5,7 +5,7 @@ const fs = require('fs');
 const { Webhook } = require('discord-webhook-node');
 
 const TELEGRAM_TOKEN = "8492109741:AAFShgZy_MhE6IGSGKH8PF1H6dac4KKZBgs";
-const DISCORD_WEBHOOK_URL = "DISCORD_WEBHOOK_URL";
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1458446450387062825/n3DWZpHq4efHLdNIZUiMyGcFj-ySQo21aule2_rteaAhh40SRn9dXt9EdJoJt2iJbBC3";
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 const hook = new Webhook(DISCORD_WEBHOOK_URL);
